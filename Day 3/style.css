@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+/* * {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: black;
+  text-align: center;
+  padding: 15px;
+}
+
+a {
+  color: aqua;
+  font-size: 25px;
+  padding-right: 25px;
+  display: inline-block;
+}
+
+a:link {
+  color: red;
+}
+
+a:visited {
+  color: yellow;
+}
+
+a:hover {
+  color: white;
+  cursor: pointer;
+}
+
+a:active {
+  background-color: antiquewhite;
+  color: black;
+}
+
+h1::first-letter {
+  font-size: 40px;
+  color: red;
+}
+
+h1::after {
+  content: 'TOP';
+  background-color: yellow;
+  color: black;
+  font-size: 16px;
+  padding: 5px;
+} */
+
+/* .card {
+  background-color: black;
+  width: 500px;
+  height: 500px;
+  color: white;
+  padding: 25px;
+  border: 5px solid red;
+  margin: 0 0 0 50px;
+} */
+
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: 10px;
+  width: 50%;
+  background-color: aqua;
+  position: relative;
+}
+
+/* p {
+  line-height: 50px;
+} */
+
+h1::after {
+  content: 'TOP';
+  background-color: brown;
+  color: white;
+  position: absolute;
+  top: -25%;
+  right: -8%;
+  font-size: 10px;
+  padding: 10px;
+}
+
+
+body {
+  position: relative;
+}
+
+button {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+}
