@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear Property</title>
+    <link rel="stylesheet" href="../2-Css Flex Property/01-Flex Box/base.css">
+    <style>
+        img {
+            float: left;
+            margin-right: 15px;
+            width: 150px;
+            height: auto;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>CSS Clear Property</h2>
+
+    <div class="container clearfix">
+        <img src="/LANGUAGE/Css@3/images/T_Shirt.jpg" alt="girl-image">
+        <p class="text">
+            This text appears below the floated image because of the `clear: both;` property, ensuring that the content
+            does
+            not wrap around the floated image.
+        </p>
+    </div>
+</body>
+
+</html>

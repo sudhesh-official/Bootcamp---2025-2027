@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear</title>
+    <link rel="stylesheet" href="../2-Css Flex Property/01-Flex Box/base.css">
+    <style>
+        .left-column {
+            float: left;
+            width: 45%;
+            background-color: lightgray;
+            padding: 20px;
+        }
+
+        .right-column {
+            float: right;
+            width: 45%;
+            background-color: lightblue;
+            padding: 20px;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Using Both Float and Clear for a Layout</h2>
+    <div class="container clearfix">
+        <div class="left-column">Left Column Content</div>
+        <div class="right-column">Right Column Content</div>
+    </div>
+    <div class="footer">This is the footer that remains below the floated columns.</div>
+</body>
+
+</html>
